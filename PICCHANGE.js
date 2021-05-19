@@ -18,7 +18,7 @@
 function myFunction() {
   if ((document.getElementById("castle").style.opacity = "100%")) {
     document.getElementById("castle").style.opacity = "50%";
-  } else {
+  } else if ((document.getElementById("castle").style.opacity = "50%")) {
     document.getElementById("castle").style.opacity = "100%";
   }
 }
