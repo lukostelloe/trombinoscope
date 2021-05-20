@@ -16,9 +16,9 @@
 // }
 
 function myFunction() {
-  if ((document.getElementById("castle").style.opacity = "100%")) {
-    document.getElementById("castle").style.opacity = "50%";
-  } else if ((document.getElementById("castle").style.opacity = "50%")) {
-    document.getElementById("castle").style.opacity = "100%";
+  if ((document.getElementById("andre").style.opacity = "100%")) {
+    document.getElementById("andre").style.opacity = "50%";
+  } else if ((document.getElementById("andre").style.opacity = "50%")) {
+    document.getElementById("andre").style.opacity = "100%";
   }
 }
