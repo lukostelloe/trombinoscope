@@ -4,6 +4,34 @@ body {
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  opacity: 0.8;
+  z-index: 500;
+  color: white;
+  font-size: 20px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .header {
   top: 0px;
   left: 0px;
@@ -13,7 +41,13 @@ body {
   color: white;
   font-size: 50px;
   text-shadow: 2px 2px grey;
-  height: auto;
+  height: 200px;
+}
+
+.TROMBI {
+  position: absolute;
+  top: 0px;
+  right: 500px;
 }
 
 img {
@@ -38,9 +72,8 @@ img {
 }
 
 /* USING THE FLIP THING */
-/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
-/* This container is needed to position the front and back side */
+/* position front and back side */
 .flip-box-inner {
   position: relative;
   width: 80%;
@@ -50,7 +83,7 @@ img {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you click the flip box container */
+/* flip on click */
 .flip-box:active .flip-box-inner {
   transform: rotateY(180deg);
 }
@@ -67,7 +100,7 @@ img {
 
 /* Style the back side */
 .flip-box-back {
-  position: relative;
+  position: absolute;
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
@@ -79,9 +112,4 @@ img {
   width: 400px;
   height: 300px;
   perspective: 2000px;
-}
-
-/* flip on click */
-.flip-box:active .flip-box-inner {
-  transform: rotateY(180deg);
 }
